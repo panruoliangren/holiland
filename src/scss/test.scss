@@ -1,0 +1,164 @@
+h1{background-color: blue;}
+
+$font-size:30px;
+$class: box;
+$diration: top left;
+$list : (20px 40px)(30px 20px)(40px 30px);
+
+.box ul{
+	width: 200px;
+	li{
+		float: left;
+		font-size: $font-size;
+		&.#{$class}{
+		  color:blue;
+		}
+		&:hover{
+		  color:yellow;
+		  border:{
+		    #{nth($diration,1)} : 1px solid #ddd;
+		    #{nth($diration,2)} : 1px solid #ccc;
+		    style:double;
+		  }
+		  margin:nth($list,3);
+		  
+		}
+	}
+}
+
+$headers:(h1:20px,h2:30px,h3:40px);
+
+@each $key, $value in $headers{
+
+  #{$key}{
+    font-size: $value;
+  }
+
+}
+
+@mixin center($width){
+  width:$width;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.inner{
+  @include center(200px);
+}
+
+$color:red;
+a{
+  color:$color;
+  &:hover{
+    color:lighten($color,20%);
+  }
+  width:(600*0.7)px;
+}
+
+$baseFont: 16px;
+@function pxToRem($px){
+  @return $px/$baseFont * 1rem;
+}
+
+a{
+  font-size:pxToRem(32px);
+  color:if(3>2, red,blue);
+}
+
+@for $i from 1 to 6{
+  .item-#{$i}{
+    width:($i*100)px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 编译结果 */
+
+h1 {
+  background-color: yellow;
+}
+
+.box ul {
+  width: 200px;
+}
+.box ul li {
+  float: left;
+  font-size: 30px;
+}
+.box ul li.box {
+  color: blue;
+}
+.box ul li:hover {
+  color: yellow;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ccc;
+  border-style: double;
+  margin: 40px 30px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+.inner {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: red;
+  width: 420 px;
+}
+a:hover {
+  color: #ff6666;
+}
+
+a {
+  font-size: 2rem;
+  color: red;
+}
+
+.item-1 {
+  width: 100 px;
+}
+
+.item-2 {
+  width: 200 px;
+}
+
+.item-3 {
+  width: 300 px;
+}
+
+.item-4 {
+  width: 400 px;
+}
+
+.item-5 {
+  width: 500 px;
+}

@@ -1,0 +1,116 @@
+footer{
+	width: 996px;
+    margin: 0 auto;
+}
+footer>p,.foot-menu{
+    color: #626262;
+    background-color: #ededed;
+}
+footer>p{
+	height: 24px;
+	line-height: 24px;
+	font-size: 13px;
+	padding-left: 20px;
+	overflow: hidden;
+	position: relative;
+	margin-top: 10px;
+}
+footer p i{
+    width: 22px;
+    height: 14px;
+    float: left;
+    top: 8px;
+    left: 84px;
+    position: absolute;
+    background: url("/static/images/bj_4.png") 0px -84px;
+}
+footer .foot-menu{
+    height: 111px;
+    display: none;
+    padding-top: 18px;
+}
+footer .foot-menu dl{
+	width: 140px;
+	float:left;
+	color:#626262;
+	margin-left:26px;
+	position: relative;
+}
+footer .foot-menu dl dt{
+	font-size: 19px;
+	margin-left: 33px;
+}
+footer .foot-menu dl dt i{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    left: 5px;
+    background-image: url("/static/images/bj3.png");
+}
+footer .foot-menu dl dd{
+    margin-left: 39px;
+}
+footer .foot-menu dl dd a{
+	color:#626262;
+	font-size:12px;
+}
+footer .foot{     
+    margin: 10px 0;
+    border-top: 1px solid #d5d5d5;
+}
+footer .foot .foot-lt{
+    float: left;
+    margin-top: 10px;
+}
+footer .foot .foot-lt p{
+    height: 20px;
+    color: #898989;
+    line-height: 20px;
+    font-size: 12px;
+}
+footer .foot .foot-lt p:nth-child(4){
+    margin: 10px 0;
+}
+footer .foot .foot-lt p:nth-child(7){
+    margin-bottom: 10px;
+}
+footer .foot .wx{
+    float: right;
+    position: relative;
+    padding-top: 14px;
+    font-size: 13px;
+}
+footer .foot .wx a{
+    width: 31px;
+    height: 35px;
+    position: absolute;
+    top: 35px;
+    right: 34px;
+    background: url("/static/images/bj_2.png") no-repeat 0px -56px;
+}
+footer .foot .wx dl{
+    width: 180px;
+    height: 220px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    left: -114px;
+    top: -189px;
+    background-color: #fff;
+    display: none;
+}
+footer .foot .wx dl dt{
+    height: 24px;
+    color: #898989;
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 15px; 
+    margin: 10px 0;
+}
+footer .foot .wx dl dd{
+    width: 150px;
+    height: 150px;
+    background-image: url("/static/images/weixin.jpg");
+    background-size: 100%;
+    margin: 5px 15px;
+}

@@ -1,0 +1,177 @@
+@import "./component/style.scss";
+@import "./component/header.scss";
+@import "./component/footer.scss";
+
+.hr{
+    width: 996px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-top: 1px dashed #d5d5d5;
+    position: relative;
+    h4{
+        width: 97px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        color: #909090;
+        background-color: white;
+        position: absolute;       
+        left: 50%;
+        margin-top: -16px;
+        margin-left: -48px;
+    }
+    p{
+        height: 14px;
+        color: #87D0E3;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 28px 0;
+        margin-bottom: 16px;
+        span{
+            float: right;
+            margin-right: 48px;
+            i{
+                width: 23px;
+                height: 14px;
+                float: left;
+                background-image: url("/static/images/heart.jpg");
+            }
+        }        
+    }
+}
+.form{
+    width: 996px;
+    height: 385px;
+    margin: 0 auto;
+    form{
+        width: 310px;
+        margin: 0 auto;
+        color: #626262;
+        dl{
+            height: 40px;
+            line-height: 40px;   
+            text-align: center;         
+            margin-bottom: 10px;          
+            dt{
+                width: 70px;
+                height: 40px;
+                float: left;              
+                font-size: 14px;
+                padding: 0 5px 0 10px;    
+                margin-right: 5px; 
+                background-color: #ededed;           
+            }
+            dd{
+                height: 40px; 
+                float: left;   
+                background-color: #ededed;  
+                position: relative;                           
+                input{
+                    width: 210px;
+                    height: 40px;                  
+                    float: left;
+                    line-height: 40px;
+                    margin-left: 10px;   
+                    background-color: #ededed;         
+                }
+                img{
+                    width: 50px;
+                    height: 20px;                   
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin-top: 10px;
+                    margin-right: 5px;
+                    background-color: green;
+                }
+                span{                                      
+                    height: 30px;
+                    color: red;
+                    line-height: 30px;
+                    font-size: 13px;
+                    padding: 0 20px 0 40px;
+                    position: absolute;
+                    left: 250px;
+                    white-space: nowrap;
+                    background: url("/static/images/bj_3.png");
+                    display: none;
+                }
+                em{
+                    width: 103px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 13px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin-top: 5px;
+                    margin-right: 5px;
+                    background-color: #87D0E3;
+                }
+            }        
+        }
+        .stren{
+            height: 13px;
+            font-size: 13px;
+            line-height: 13px;
+            margin-left: 90px;
+            margin-bottom: 10px;
+            display: none;
+            span{               
+                float: left;                     
+            }
+            .len{   
+                width: 100px;
+                height: 11px;
+                display: inline-block;
+                border:1px solid #87d0e3;
+                margin: 0 4px; 
+                i{
+                    height: 11px;
+                    float: left;
+                    background-color: #87d0e3;
+                }  
+                .pwdstren1{
+                    width: 33.3%;
+                } 
+                .pwdstren2{
+                    width: 66.6%;
+                } 
+                .pwdstren3{
+                    width: 100%;
+                } 
+            }
+        }
+        .agree{
+            width: 230px;
+            line-height: 17px;
+            margin: 0 auto;
+            padding-left: 40px;
+            margin-bottom: 10px;
+            input{
+                float: left;
+                margin: 4px 9px 0 0;
+            }
+           a{
+                color: #626262;
+                font-size: 13px;
+                &:hover{
+                    color: #87d0e3;
+                    text-decoration: underline;
+                }     
+           } 
+        }
+        #register{
+            width: 310px;
+            height: 40px;
+            display: block;
+            line-height: 40px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #87D0E3;
+        }
+    }
+}
+

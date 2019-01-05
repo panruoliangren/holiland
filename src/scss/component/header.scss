@@ -1,0 +1,112 @@
+header{
+    width: 996px;
+    height: 125px;
+    margin: 0 auto;
+}
+header .logo{
+    float: left;
+    margin-top: 30px;
+}
+header .nav{
+    width: 845px;
+    float: right;
+}
+header .nav,header a{
+    color: #6bc4df;
+    font-size: 14px;
+}
+header .nav-top{
+    height: 14px;
+    padding-top: 23px;
+    margin-bottom: 13px;
+}
+header .nav-top a{
+    float: right;   
+    line-height: 14px;
+    margin-left: 20px;
+}
+header .nav-top a i{
+    float: left;
+    background-size: 100%;
+    margin-right: 8px;
+}
+header .nav-top a:nth-child(4) i{
+    width: 9px;
+    height: 14px;
+    background-image: url("/static/images/dizhi_icon.png");
+}
+header .nav-top a:nth-child(3) i{
+    width: 18px;
+    height: 14px;
+    background-image: url("/static/images/cart_icon.png");
+}
+header .nav-bottom nav{
+    float: left;
+}
+header .nav-bottom ul li{
+    width: 163px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #6bc4df;
+    position: relative;
+}
+header .nav-bottom ul li span{
+    height: 25px;
+    line-height: 25px;
+    display: block;
+}
+header .nav-bottom ul li:last-child{
+    border: 0;
+}
+header .nav-bottom .s-nav{
+    width: 125px;
+    background-color: #fff;
+    left: 19px;
+    position: absolute;
+    display: none;
+}
+header .nav-bottom .s-nav li{
+    width: 125px;
+    height: 43px;
+    line-height: 43px;
+    border: 0;
+}
+header .nav-bottom .tel,header .nav-bottom form{
+    float: right;
+    font-size: 12px;
+    margin-right: 46px;
+}
+header .nav-bottom .tel{
+    margin-bottom: 6px;
+}
+header .nav-bottom .tel i{
+    width: 15px;
+    height: 15px;
+    float: left;
+    background-image: url("/static/images/phone_icon.png");
+    background-size: 100%;
+    margin-right: 1px;
+}
+header .nav-bottom form{
+    width: 105px;
+    height: 20px;
+    position: relative;
+    border: 1px solid #6bc4df;
+}
+header .nav-bottom form a{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-image: url("/static/images/search_icon.png");
+    background-size: 100%;
+}
+
+header .nav-bottom form input{
+    width: 85px;
+    height: 20px;
+    float: left;
+    margin-left: 20px;
+}

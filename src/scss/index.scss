@@ -1,0 +1,95 @@
+@import "./component/style.scss";
+@import "./component/header.scss";
+@import "./component/footer.scss";
+
+.banner{
+    width: 996px;
+    height: 450px;
+    margin: 0 auto;
+    margin-bottom:10px;
+    position: relative;
+    overflow: hidden;
+    ul{
+        position: absolute;
+        left: 0;
+        top: 0;
+        li{
+            height: 450px;
+            float: left;
+        }
+    }
+    ol{
+        position: absolute;
+        left: 46.5%;
+        bottom: 10px;
+        z-index: 66;
+        li{
+            width: 10px;
+            height: 10px;      
+            float: left;
+            border-radius: 50%;
+            border:1px solid #626262;
+            cursor: pointer;
+            margin-right: 5px;
+            &:hover{
+                background-color: #626262;
+            }
+        }
+    } 
+    a{
+        width: 37px;
+        height: 39px;
+        z-index: 66;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -37px;
+        opacity: 0.8;
+    }
+    #goPrev{        
+        left: 20px;
+        background: url("/static/images/bj_4.png") ;
+    }
+    #goNext{
+        right: 20px;
+        background: url("/static/images/bj_4.png") 0 -40px;
+    }
+}
+.series{
+    width: 996px;
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    dl{
+        width: 325px;
+        dt{
+            height: 220px;            
+            background-image: url("/static/images/1456992198036601631.jpg");
+        }
+        dd{
+            height: 25px;
+            color: white;
+            background-color: #87d0e3;
+            padding-left: 15px;
+            &:nth-of-type(1){
+                font-size: 13px;
+                line-height: 36px;
+            }
+            &:nth-of-type(2){
+                font-size: 12px;
+                line-height: 23px;
+            }
+        }
+    }
+}
+.video{
+    width: 996px;
+    height: 420px;
+    margin: 10px auto;
+    img{
+        width: 240px;
+        height: 420px;
+        margin-right: 10px;
+    }
+}
