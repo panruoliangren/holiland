@@ -6,7 +6,7 @@
     width: 996px;
     margin: 0 auto;
     margin-top: 10px;
-    margin-bottom: 28px;    
+    margin-bottom: 28px;
     border-top: 1px dashed #d5d5d5;
     position: relative;
     h4{
@@ -20,25 +20,24 @@
         left: 50%;
         margin-top: -16px;
         margin-left: -48px;
-    }    
-}
-.heart{
-    height: 14px;
-    width: 996px;
-    color: #87D0E3;
-    font-size: 14px;
-    line-height: 14px;
-    margin: 0 auto;
-    span{
-        float: right;
-        margin-right: 48px;
-        i{
-            width: 23px;
-            height: 14px;
-            float: left;
-            background-image: url("/static/images/heart.jpg");
-        }
-    }        
+    }
+    p{
+        height: 14px;
+        color: #87D0E3;
+        font-size: 14px;
+        line-height: 14px;
+        padding-top: 28px;
+        span{
+            float: right;
+            margin-right: 48px;
+            i{
+                width: 23px;
+                height: 14px;
+                float: left;
+                background-image: url("/static/images/heart.jpg");
+            }
+        }        
+    }
 }
 .form{
     width: 996px;
@@ -95,7 +94,6 @@
                     margin-left: 10px;   
                     background-color: #ededed;         
                 }
-                //验证码图片
                 img{
                     width: 50px;
                     height: 20px;                   
@@ -117,19 +115,6 @@
                     white-space: nowrap;
                     background: url("/static/images/bj_3.png");
                     display: none;
-                }
-                //短信获取
-                em{
-                    width: 103px;
-                    height: 30px;
-                    line-height: 30px;
-                    font-size: 13px;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    margin-top: 5px;
-                    margin-right: 5px;
-                    background-color: #87D0E3;
                 }
             }        
         }
@@ -165,20 +150,12 @@
                 } 
             }
         }
-        .agree{
-            width: 230px;
-            line-height: 17px;
-            margin: 0 auto;
-            padding-left: 40px;
-            margin-bottom: 10px;
-            input{
-                float: left;
-                margin: 4px 9px 0 0;
-            }
-        }
-        #regBtn{
+        .tel-btn,.email-btn{
             width: 310px;
-            display: block;          
+            display: block;
+        }
+        .tel-btn{
+            margin-bottom: 10px;
         }
     }
 }

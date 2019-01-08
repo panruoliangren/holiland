@@ -1,4 +1,4 @@
-define(["jquery"], () => {
+define(["jquery","cookie"], () => {
 	class Header{
 		constructor(){
 			this.init();
@@ -10,12 +10,22 @@ define(["jquery"], () => {
 					resolve();
 				})
 			}).then(() => {
-				this.nav();
+				this.login();
+				this.exit();
 			})
+		}	
+		login(){
+			let tel=$.cookie("tel");
+			if(tel){
+				$("#header-login").html("hi"+tel);
+				$("#header-register").remove();
+				$(".nav-top").prepend("<a href='javascript:;' id='exitBtn'>[退出]</a>");
+			}
 		}
-		nav(){
-			$("nav").on("click", "li", function(){
-				alert($(this).html());
+		exit(){			
+			$("#exitBtn").on("click",function(){
+				$.cookie("tel", "", {expires: -1});	
+				location.reload();
 			})
 		}
 	}

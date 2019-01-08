@@ -59,6 +59,10 @@ header .nav-bottom ul li span{
 header .nav-bottom ul li:last-child{
     border: 0;
 }
+header .nav-bottom ul li:nth-child(2):hover .s-nav{
+   display: block;
+   z-index: 666;
+}
 header .nav-bottom .s-nav{
     width: 125px;
     background-color: #fff;

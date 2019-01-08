@@ -2,11 +2,12 @@
 @import "./component/header.scss";
 @import "./component/footer.scss";
 
+
 .hr{
     width: 996px;
     margin: 0 auto;
     margin-top: 10px;
-    margin-bottom: 28px;    
+    margin-bottom: 28px;
     border-top: 1px dashed #d5d5d5;
     position: relative;
     h4{
@@ -20,25 +21,7 @@
         left: 50%;
         margin-top: -16px;
         margin-left: -48px;
-    }    
-}
-.heart{
-    height: 14px;
-    width: 996px;
-    color: #87D0E3;
-    font-size: 14px;
-    line-height: 14px;
-    margin: 0 auto;
-    span{
-        float: right;
-        margin-right: 48px;
-        i{
-            width: 23px;
-            height: 14px;
-            float: left;
-            background-image: url("/static/images/heart.jpg");
-        }
-    }        
+    }
 }
 .form{
     width: 996px;
@@ -94,18 +77,7 @@
                     line-height: 40px;
                     margin-left: 10px;   
                     background-color: #ededed;         
-                }
-                //验证码图片
-                img{
-                    width: 50px;
-                    height: 20px;                   
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    margin-top: 10px;
-                    margin-right: 5px;
-                    background-color: green;
-                }
+                }             
                 span{                                      
                     height: 30px;
                     color: red;
@@ -117,69 +89,34 @@
                     white-space: nowrap;
                     background: url("/static/images/bj_3.png");
                     display: none;
-                }
-                //短信获取
-                em{
-                    width: 103px;
+                }   
+                a{
                     height: 30px;
                     line-height: 30px;
-                    font-size: 13px;
                     position: absolute;
                     right: 0;
                     top: 0;
                     margin-top: 5px;
-                    margin-right: 5px;
-                    background-color: #87D0E3;
-                }
-            }        
+                    margin-right: 14px;                    
+                }       
+            }                    
         }
-        .stren{
-            height: 13px;
-            font-size: 13px;
-            line-height: 13px;
-            margin-left: 90px;
-            margin-bottom: 10px;
-            display: none;
-            span{               
-                float: left;                     
-            }
-            .len{   
-                width: 100px;
-                height: 11px;
-                display: inline-block;
-                border:1px solid #87d0e3;
-                margin: 0 4px; 
-                i{
-                    height: 11px;
-                    float: left;
-                    background-color: #87d0e3;
-                }  
-                .pwdstren1{
-                    width: 33.3%;
-                } 
-                .pwdstren2{
-                    width: 66.6%;
-                } 
-                .pwdstren3{
-                    width: 100%;
-                } 
-            }
-        }
-        .agree{
-            width: 230px;
-            line-height: 17px;
-            margin: 0 auto;
-            padding-left: 40px;
-            margin-bottom: 10px;
-            input{
-                float: left;
-                margin: 4px 9px 0 0;
-            }
-        }
-        #regBtn{
+        .btn-box{
             width: 310px;
-            display: block;          
-        }
+            height: 40px;   
+            a{                              
+                float: left;                                      
+            }       
+            #logBtn{
+                width: 195px;               
+            }
+            .regfree-btn{
+                width: 105px;     
+                line-height: 40px;                       
+                margin-left: 10px;                
+                background-color:#ededed;
+                
+            }
+        }               
     }
 }
-

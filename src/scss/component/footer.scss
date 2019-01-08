@@ -1,39 +1,45 @@
+.service{
+    width: 20px;
+    height: 72px;
+    position: fixed;
+    right: 0;
+    top: 450px;
+}
 footer{
 	width: 996px;
     margin: 0 auto;
 }
-footer>p,.foot-menu{
+footer #help,.foot-menu{
     color: #626262;
     background-color: #ededed;
 }
-footer>p{
+footer #help{
 	height: 24px;
 	line-height: 24px;
 	font-size: 13px;
-	padding-left: 20px;
-	overflow: hidden;
+	padding-left: 20px;	
 	position: relative;
 	margin-top: 10px;
 }
-footer p i{
+footer #help i{
     width: 22px;
     height: 14px;
     float: left;
-    top: 8px;
+    top: 6px;
     left: 84px;
     position: absolute;
     background: url("/static/images/bj_4.png") 0px -84px;
 }
 footer .foot-menu{
-    height: 111px;
-    display: none;
-    padding-top: 18px;
+    height: 0;
+    overflow: hidden;
 }
 footer .foot-menu dl{
 	width: 140px;
 	float:left;
 	color:#626262;
 	margin-left:26px;
+	margin-top: 18px;
 	position: relative;
 }
 footer .foot-menu dl dt{
@@ -80,7 +86,7 @@ footer .foot .wx{
     padding-top: 14px;
     font-size: 13px;
 }
-footer .foot .wx a{
+footer .foot #wx{
     width: 31px;
     height: 35px;
     position: absolute;
@@ -90,14 +96,13 @@ footer .foot .wx a{
 }
 footer .foot .wx dl{
     width: 180px;
-    height: 220px;
-    border: 1px solid #ccc;
+    height: 0px;
     border-radius: 5px;
     position: absolute;
     left: -114px;
     top: -189px;
-    background-color: #fff;
-    display: none;
+    background-color: #fff; 
+    overflow: hidden;
 }
 footer .foot .wx dl dt{
     height: 24px;

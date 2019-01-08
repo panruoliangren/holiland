@@ -9,13 +9,20 @@
     margin-bottom:10px;
     position: relative;
     overflow: hidden;
-    ul{
-        position: absolute;
+    ul{       
         left: 0;
         top: 0;
         li{
             height: 450px;
-            float: left;
+            opacity: 0;
+            position: absolute;
+            z-index: 0;
+            &:nth-child(1){
+                opacity: 1;
+            }
+        }
+        .bc{
+            z-index: 66;
         }
     }
     ol{
@@ -31,12 +38,12 @@
             border:1px solid #626262;
             cursor: pointer;
             margin-right: 5px;
-            &:hover{
-                background-color: #626262;
-            }
+        }
+        .bc{
+            background-color: #626262;
         }
     } 
-    a{
+    .go{
         width: 37px;
         height: 39px;
         z-index: 66;
@@ -64,8 +71,14 @@
     dl{
         width: 325px;
         dt{
-            height: 220px;            
-            background-image: url("/static/images/1456992198036601631.jpg");
+            height: 220px;  
+            overflow: hidden;          
+            img{
+                transition: all 1s ease 0s;
+                &:hover{
+                   transform: scale(1.07, 1.07);                  
+               }
+            }
         }
         dd{
             height: 25px;

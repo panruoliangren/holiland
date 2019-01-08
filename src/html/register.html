@@ -9,37 +9,47 @@
 	<body>
 		<header></header>
 		<div class="hr">
-			<h4>用户注册</h4>
-			<p><span><i></i>注册赠送积分:100</span></p>
+			<h4>用户注册</h4>			
 		</div>	
+		<p class="heart"><span><i></i>注册赠送积分:100</span></p>
 		<div class="form">
 			<form>
 				<dl>
 					<dt>手机号</dt>
 					<dd>
-						<input type="text" name="tel" id="tel"/>
-						<span>请填写您手机号</span>
+						<label for="tel"><input type="text" name="tel" id="tel"/></label>
+						<span>请填写您的手机号</span>
 					</dd>	
 				</dl>
 				<dl>
+					<dt>邮箱</dt>
+					<dd>
+						<label for="email"><input type="text" name="email" id="email"/></label>
+						<span>请填写您的邮箱</span>
+					</dd>	
+				</dl>
+				<!--
+				<dl>
 					<dt>验证码</dt>
 					<dd>
-						<input type="text" name="yzm" id="yzm"/><img src="" alt="" />						
+						<label for="yzm"><input type="text" name="yzm" id="yzm"/>
+						<img src="" alt="" /></label> 						
 						<span>请输入验证码</span>
 					</dd>
 				</dl>
 				<dl>
 					<dt>短信验证码</dt>
 					<dd>
-						<input type="text" name="mes" id="mes"/>
+						<label for="mes"><input type="text" name="mes" id="mes"/></label> 
 						<em>获取短信验证码</em>	
 						<span>请输入短信验证码</span>
 					</dd>
 				</dl>
+				-->
 				<dl>
 					<dt>密码</dt>
 					<dd>
-						<input type="text" name="pwd" id="pwd"/>
+						<label for="pwd"><input type="text" name="pwd" id="pwd"/></label>
 						<span>密码必须输入6-20位字符</span>
 					</dd>
 				</dl>
@@ -51,15 +61,15 @@
 				<dl>
 					<dt>确认密码</dt>
 					<dd>
-						<input type="text" name="pwd1" id="pwd1"/>
+						<label for="pwd1"><input type="text" name="pwd1" id="pwd1"/></label>
 						<span>请再次输入密码</span>
 					</dd>
 				</dl>
 				<p class="agree">
-					<input type="checkbox" name="" id="" value="" />
-					<a href="">我已阅读并接受"服务条款"</a>
+					<input type="checkbox" name="" id="g" value="" />
+					<a href="#" class="line">我已阅读并接受"服务条款"</a>
 				</p>
-				<a href="#" id="register">注册</a>
+				<a href="#" class="btn" id="regBtn">注册</a>
 			</form>
 		</div>		
 		<footer></footer>
