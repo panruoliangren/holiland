@@ -1,0 +1,22 @@
+@import "./component/style.scss";
+@import "./component/header.scss";
+@import "./component/footer.scss";
+@import "./component/item.scss";
+
+.series{
+    width: 996px;
+    margin: 0 auto;
+    .cakeSeries{
+        width: 996px;
+        height: 341px;     
+        display: block;   
+        margin-bottom:10px;
+    }
+}
+h4{
+    width: 996px;
+    margin: 0 auto; 
+    color:#626262;
+    font-size: 13px;
+    margin-bottom: 10px;
+} 

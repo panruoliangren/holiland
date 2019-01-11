@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/cart.css">
+		<script type="text/javascript" src="/libs/require/require.js" data-main="/js/cart.js"></script>
+	</head>
+	<body>
+		<header></header>
+		<div class="hr">
+			<h4>购物车</h4>
+		</div>
+		<div class="cart-box">
+			<p class="nobuy">您还没有选购商品，您可以选择以下推荐商品， 也可以<a href="/">返回首页</a>购买。</p>
+			<div class="cart">			
+				<table>
+					<thead>
+						<tr>										
+				            <th colspan="2">商品名称</th>
+				           <!-- <th>属性</th>-->
+				            <th>积分</th>
+				            <th>单价</th>
+				            <th>购买数量</th>
+				            <th>小计</th>
+				            <th>操作</th>
+				        </tr>
+					</thead>
+			        <tbody>
+				       	<!--<tr>	
+				        	<td><input type="checkbox" class="checkA"/></td>
+				            <td><img src="/static/images/930_G_1536033344075.jpg" alt="" />
+				            	<a href="/html/detail.html?id=1" class="link blue"><span>白桃</span></a>
+				            </td>
+				            <td><span>66积分</span></td>
+				          	<td><span>￥89</span></td>
+				          	<td>
+				          		<a href="javascript:;" id="sub">-</a>
+								<a href="javascript:;" id="num">1</a>
+								<a href="javascript:;" id="add">+</a>
+				          	</td>
+				          	<td><span>￥89</span></td>
+				            <td>			      
+				            	<a href="javascript:;" class="delBtn blue">删除</a>
+				            </td>
+				        </tr>			    -->
+			        </tbody>
+				</table>
+				<p><a href="/html/cakeSeries.html" class="gobuy">继续购物</a></p>
+				<div class="mbox">
+					<a href="javascript:;" class="blue" id="checkAll">全选</a>
+					<a href="javascript:;" class="blue" id="checkChoose">×删除选中商品</a>
+					<div>总计：￥<span id="money">0</span>
+						<a href="javascript:;" class="next">结算</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<h4 class="morel">更多精彩</h4>
+		<div id="all-item" class="series">
+			
+		</div>
+		<footer></footer>
+	</body>
+</html>

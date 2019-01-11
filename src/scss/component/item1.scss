@@ -1,0 +1,35 @@
+.series{
+    width: 996px;   
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    dl{
+        width: 325px;
+        height: 270px;
+        dt{
+            height: 220px;  
+            overflow: hidden;          
+            img{
+                transition: all 1s ease 0s;
+                &:hover{
+                   transform: scale(1.07, 1.07);                  
+               }
+            }
+        }
+        dd{
+            height: 25px;
+            color: white;
+            background-color: #87d0e3;
+            padding-left: 15px;
+            &:nth-of-type(1){
+                font-size: 13px;
+                line-height: 36px;
+            }
+            &:nth-of-type(2){
+                font-size: 12px;
+                line-height: 23px;
+            }
+        }
+    }
+}

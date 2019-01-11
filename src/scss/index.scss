@@ -1,6 +1,7 @@
 @import "./component/style.scss";
 @import "./component/header.scss";
 @import "./component/footer.scss";
+@import "./component/item1.scss";
 
 .banner{
     width: 996px;
@@ -62,40 +63,7 @@
         background: url("/static/images/bj_4.png") 0 -40px;
     }
 }
-.series{
-    width: 996px;
-    height: 270px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    dl{
-        width: 325px;
-        dt{
-            height: 220px;  
-            overflow: hidden;          
-            img{
-                transition: all 1s ease 0s;
-                &:hover{
-                   transform: scale(1.07, 1.07);                  
-               }
-            }
-        }
-        dd{
-            height: 25px;
-            color: white;
-            background-color: #87d0e3;
-            padding-left: 15px;
-            &:nth-of-type(1){
-                font-size: 13px;
-                line-height: 36px;
-            }
-            &:nth-of-type(2){
-                font-size: 12px;
-                line-height: 23px;
-            }
-        }
-    }
-}
+
 .video{
     width: 996px;
     height: 420px;

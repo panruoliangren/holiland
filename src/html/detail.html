@@ -7,10 +7,87 @@
 		<script type="text/javascript" src="/libs/require/require.js" data-main="/js/detail.js"></script>
 	</head>
 	<body>
-		<script type="text/html" id="detail-template">
-			<h1>{{detail.title}}</h1>
-			<img src="{{detail.img}}" alt="" />
-			<button>加入购物车</button>
-		</script>
+		<header></header>
+		<div class="detail-main" id="detail-item">		
+			<div class="detail-lt">
+				<ul>
+					<li class="bc">
+						<img id="detail-img"/>
+					</li>					
+				</ul>
+				<ol>
+					<li class="bc"></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<a href="javascript:;" class="go" id="goPrev"></a>
+	   			<a href="javascript:;" class="go" id="goNext"></a>
+			</div>
+			
+			<div class="detail-rt">
+				<img src="" alt="" id="big-img"/>			
+				<dl class="detail-banner">	
+					<dt></dt>
+					<dd><h2 id="detail-title"></h2></dd>
+					<dd><span></span><em id="detail-price"></em></dd>
+				</dl>
+				<ul>
+					<!--<li>
+						<dt>规格</dt>
+						<dd>
+							<span>请选择<i></i></span>
+							<div>
+								<p>
+									<b>14×14cm</b>
+									<em>￥229.00</em>
+								</p>
+								<p>
+									<b>18×18cm</b>
+									<em>￥369.00</em>
+								</p>
+							</div>
+						</dd>							
+					</li>
+					<li><a href="javascript:;" id="collectBtn">收藏</a></li>
+					<li>
+						<dt>餐具</dt>
+						<dd>
+							<span>请选择（免费）<i></i></span>
+							<div>
+								<p>请选择上方规格</p>
+							</div>
+						</dd>
+					</li>-->
+					<li>
+						<a href="javascript:;" id="cartBtn">加入购物车</a>
+					</li>
+					<li>							
+						<dt>数量</dt>
+						<dd>
+							<p class="num">
+								<a href="javascript:;" id="subBtn">-</a>
+								<a href="javascript:;" id="num">1</a>
+								<a href="javascript:;" id="addBtn">+</a>
+							</p>
+						</dd>
+					</li>
+					<li>
+						<a href="/html/cart.html" id="buynowBtn">立即购买</a>
+					</li>
+				</ul>
+			</div>
+	
+		</div>	
+		
+		<div class="detail-introduce">
+			<img src="/static/images/1520418120614145.jpg" alt="" />
+			<img src="/static/images/1485575022915784.jpg" alt="" />
+			<img src="/static/images/1538120963522594.jpg" alt="" />
+		</div>
+		<h4>更多精彩</h4>
+		<div id="all-item" class="series">
+			
+		</div>
+		<footer></footer>
 	</body>
 </html>

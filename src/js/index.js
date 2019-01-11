@@ -1,8 +1,10 @@
 //首页的业务逻辑
 require(["./requirejs.config"], () => {
 	//引入index需要依赖的模块
-	require(["jquery","header", "footer"], () => {	
-		$(function(){
+	require(["jquery", "item1" ,"url", "header", "footer"], ($,item,url) => {	
+		item.init(url.baseUrlRap+"/index-series-list",1);
+		item.init(url.baseUrlRap+"/index-service-list",2);	
+		$(function(){	
 			let $imgs=$(".banner ul li"),
 				$btns=$(".banner ol li"),
 				len=$imgs.length,

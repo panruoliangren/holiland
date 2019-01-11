@@ -1,5 +1,5 @@
 require(["./requirejs.config"], () => {
-	require(["jquery", "header", "footer"], () => {
+	require(["jquery", "url", "header", "footer"], ($,url) => {
 		$(function(){	
 			let span=$("dd span"),
 				inp=$("dd input");		
@@ -64,22 +64,23 @@ require(["./requirejs.config"], () => {
 			$("#regBtn").on("click",function(e){
 				let flag=checkForm();
 				if(inp.eq(2).val()!==inp.eq(3).val()){						
-					//span.eq(3).css("display","block").html("两次密码不一致");	
+					span.eq(3).css("display","block").html("两次密码不一致");	
 					flag=false;
 				}else{
 					if(!pwdReg.test(inp.eq(3).val())){						
-						//span.eq(3).css("display","block").html("密码必须包含字母、数字、特殊字符");
+						span.eq(3).css("display","block").html("密码必须包含字母、数字、特殊字符");
 						flag=false;
 					}
-				}					
+				}
 				
 				if(!$("#g").is(":checked")){					
 					alert("请同意条款");
 				}else{
+					
 					if(flag){
 						$.ajax({
 							type:"post",
-							url:"http://localhost/api/v1/register.php",
+							url:url.baseUrlPhp+"/api/v1/register.php",
 							data:{
 								tel:$("#tel").val(),
 								email:$("#email").val(),

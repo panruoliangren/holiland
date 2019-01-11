@@ -1,0 +1,18 @@
+<script type="text/html" id="index-template">
+	{{each list item i}}
+	{{if item.isA}}
+<a href="/html/detail.html?id={{item.id}}">
+	{{/if}}
+	<dl>	
+		<dt>		
+			<img src="{{item.img}}" alt="" />		
+		</dt>
+		<dd>{{item.title}}</dd>
+		<dd>{{item.etitle}}</dd>
+	</dl>
+	{{if item.isA}}
+</a>
+	{{/if}}
+	{{/each}}	
+</script>
+

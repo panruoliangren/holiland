@@ -1,0 +1,231 @@
+@import "./component/style.scss";
+@import "./component/header.scss";
+@import "./component/footer.scss";
+@import "./component/item.scss";
+
+.detail-main{
+    width: 996px;
+    height: 485px;
+    margin: 0 auto;
+    margin-bottom:10px;
+    .detail-lt{
+        width: 485px;
+        height: 485px;
+        float: left;
+        position: relative;
+         overflow: hidden;
+        ul{       
+            left: 0;
+            top: 0;
+            li{
+                opacity: 0;
+                position: absolute;
+                z-index: 0;
+                &:nth-child(1){
+                    opacity: 1;
+                }
+                img{
+                    width:485px;
+                    height: 485px;
+                }
+            }
+            .bc{
+                z-index: 66;
+            }
+        }
+        ol{
+            position: absolute;
+            left: 46.5%;
+            bottom: 10px;
+            z-index: 66;
+            li{
+                width: 10px;
+                height: 10px;      
+                float: left;
+                border-radius: 50%;
+                border:1px solid #626262;
+                cursor: pointer;
+                margin-right: 5px;
+            }
+            .bc{
+                background-color: #626262;
+            }
+        } 
+        .go{
+            width: 23px;
+            height: 25px;
+            z-index: 66;
+            cursor: pointer;
+            position: absolute;
+            bottom: 10px;
+            margin-top: -37px;
+            opacity: 0.8;
+            
+        }
+        #goPrev{        
+            left: 20px;
+            background: url("/static/images/bj_4.png") 0px -201px;
+        }
+        #goNext{
+            right: 20px;
+            background: url("/static/images/bj_4.png") 0px -166px;
+        }
+    }
+    .detail-rt{
+        width: 485px;
+        height: 485px;
+        float: right;
+        position: relative;
+        overflow: hidden;
+        #big-img{            
+            position: absolute;
+            display: none;
+        }
+        .detail-banner{     
+            height: 305px;
+            margin-bottom: 10px;
+            dt{      
+                margin-bottom: 12px;  
+                img{
+                    width: 485px;
+                    height: 240px;
+                    display: block;                
+                }
+            }
+            dd{
+                color: #2093cc;
+                padding-left: 15px;
+                h2{
+                    height: 30px;
+                    font-size: 20px;
+                }
+                span{
+                    font-size: 13px;
+                }
+                em{
+                    float: right;
+                    font-size: 20px;
+                    font-weight: bold;
+                    line-height: 12px;
+                    margin-right: 20px;
+                    
+                }
+            }
+        }
+        ul{
+            height: 170px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            li{
+                width: 237px;
+                height: 50px;
+                color: #fff;
+                font-size: 13px;                
+                background-color: #87d0e3;
+                #collectBtn,#cartBtn,#buynowBtn{
+                    color: #fff;
+                    display: block;
+                    line-height: 50px;
+                    text-align: center;                                       
+                }               
+                #buynowBtn{
+                    color: #626262;
+                    background-color: #ffff00;
+                }
+                dt{
+                    height: 50px;
+                    float: left;
+                    line-height: 50px;
+                    margin-left: 20px;
+                    margin-right: 5px;
+                }
+                dd{        
+                    height: 50px; 
+                    color: #4fa9d7;
+                    display: flex;
+                    align-items: center;   
+                    position: relative;                          
+                    span{
+                        width: 170px;
+                        height: 25px;
+                        float: left;          
+                        line-height: 25px;
+                        text-indent: 5px;
+                        background-color: #fff;
+                        i{
+                            width: 12px;
+                            height: 22px;
+                            float: right;
+                            margin-top: 2px;              
+                            background: url("/static/images/bj_1.png") -38px 0;
+                        }
+                    }
+                    div{
+                        display: none;
+                        width: 160px;
+                        height: 75px;
+                        overflow-y: auto;
+                        background-color: #f6f6f6;
+                        position: absolute;
+                        top: 37px;
+                        z-index: 111;
+                        padding-left: 9px;
+                        p{
+                            height: 24px;
+                            line-height: 24px;
+                            font-size: 12px; 
+                            cursor: pointer;    
+                            b{
+                                float: left;
+                            }
+                            em{
+                                float: right;
+                                margin-right: 10px;
+                            }
+                        }
+                    }                 
+                }
+                .num{
+                    width: 90px;
+                    height: 50px; 
+                    color: #4fa9d7;
+                    display: flex;
+                    align-items: center;
+                    margin-left: 35px;
+                    justify-content: space-around;                    
+                    a{
+                        width: 25px;
+                        height: 25px; 
+                        color: #fff;   
+                        line-height: 25px;                    
+                        text-align: center;
+                        display: inline-block;
+                        border: 1px solid #fff;
+                    }
+                    #num{
+                        color: #4fa9d7;
+                        background-color: #fff;
+                    }
+                }     
+            }
+        }
+   }
+}
+.detail-introduce{
+    width: 996px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    img{
+        width: 996px;
+        display: block;
+    }
+}
+h4{
+    width: 996px;
+    margin: 0 auto; 
+    color:#626262;
+    font-size: 13px;
+    margin-bottom: 10px;
+}  

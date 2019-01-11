@@ -1,0 +1,170 @@
+@import "./component/style.scss";
+@import "./component/header.scss";
+@import "./component/footer.scss";
+@import "./component/item.scss";
+
+.hr{
+    width: 996px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 28px;
+    border-top: 1px dashed #d5d5d5;
+    position: relative;
+    h4{
+        width: 97px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        color: #909090;
+        background-color: white;
+        position: absolute;       
+        left: 50%;
+        margin-top: -16px;
+        margin-left: -48px;
+    }
+}
+.cart-box{
+    width: 996px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    .nobuy{
+        height: 208px;
+        color: #626262;
+        font-size: 13px;
+        line-height: 208px;
+        text-align: center;
+        //display: none;
+        a{
+            color: #000;
+            text-decoration: underline;
+        }           
+    }
+    .cart{
+    	width: 996px; 
+    	//display: none;   	    	
+    	.blue{
+            color: #626262;
+            &:hover{
+                color: #87d0e3;
+                text-decoration: underline;
+            }
+        }    	
+    	table{
+    	    width: 996px;
+    	    color: #626262;
+    	    margin: 0 auto;
+    	    border-collapse: collapse;
+    	    text-align: center;   	    
+    	    thead{
+    	        height: 27px;
+    	        line-height: 27px;
+    	        font-size: 13px;	        
+    	        background-color: #ededed;
+    	    }
+    	    tbody{
+    	        font-size: 14px;
+    	        tr{	            
+    	            td{
+    	                height: 75px;
+                        padding: 5px 0;
+                        border-bottom: 2px solid #d5d5d5;
+    	                &:nth-child(1){
+    	                    width: 23px;
+    	                }
+    	                input{
+    	                    width: 20px;
+    	                    height: 20px;
+    	                }
+    	                .link{
+    	                    height: 65px;	                    
+                            float: left;
+    	                    line-height: 65px;
+    	                    margin-left: 5px;
+    	                }	                
+    	                img{
+    	                    width: 65px;
+    	                    height: 65px;
+    	                    float: left;
+    	                }
+    	                .num,.subBtn,.addBtn{
+                            width: 20px;
+                            height: 20px; 
+                            color: #626262;  
+                            line-height: 20px;                    
+                            text-align: center;
+                            display: inline-block;
+                            border:1px solid #d5d5d5;
+                            margin-right: 5px;
+                        }
+                        #num{
+                            color: #000; 
+                        }
+    	            }
+    	        }
+    	    }
+    	}
+    	p{
+    	    width: 996px;
+    	    height: 30px;
+    	    margin-bottom: 20px;	    
+    	    .gobuy{
+    	        height: 30px;
+    	        color: #6bc4df;
+    	        float: right;
+    	        font-size: 13px;
+    	        line-height: 30px;
+    	        margin-right: 10px;
+    	        &:hover{
+    	            text-decoration: underline;
+    	        }
+    	    }
+    	}		
+        .mbox{
+            width: 996px;
+            height: 60px;  
+            a{
+                color: #626262;
+            }  
+            #checkAll,#checkChoose{
+                height: 60px;
+                float: left;
+                line-height: 60px;   
+                font-size: 13px;  
+                margin-right: 15px;  
+            }
+            div{
+                width: 230px;
+                height: 60px;
+                float: right;
+                color: #626262; 
+                line-height: 60px;
+                font-size: 16px;
+                padding-left: 20px;
+                background-color: #ededed;
+                border:1px solid #d5d5d5;
+                #money{
+                    
+                }
+                .next{
+                    height: 30px;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 30px;
+                    float: right;
+                    padding: 0 15px;
+                    margin-top: 15px;
+                    margin-right: 15px;
+                    background-color: #ff0;
+                }
+            }      
+        }
+    }
+}
+
+.morel{
+    width: 996px;
+    margin: 0 auto; 
+    color:#626262;
+    font-size: 13px;
+    margin-bottom: 10px;
+} 

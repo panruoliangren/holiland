@@ -1,0 +1,30 @@
+@import "./component/style.scss";
+@import "./component/header.scss";
+@import "./component/footer.scss";
+
+
+.hr{
+    width: 996px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 28px;
+    border-top: 1px dashed #d5d5d5;
+    position: relative;
+    h4{
+        width: 97px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        color: #909090;
+        background-color: white;
+        position: absolute;       
+        left: 50%;
+        margin-top: -16px;
+        margin-left: -48px;
+    }
+}
+.aboutus{
+	width: 996px;
+	display: block;
+	margin: 0 auto;	
+}

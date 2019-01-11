@@ -1,0 +1,16 @@
+<script type="text/html" id="all-template">
+	{{each list item i}}
+<a href="/html/detail.html?id={{item.id}}">
+	<dl>	
+		<dt>		
+			<img src="{{item.img}}" alt="" />		
+		</dt>
+		<dd>{{item.title}}</dd>
+		<dd>
+			<span>{{item.lab}}</span>
+			<em>{{"￥"+item.price}}</em>
+		</dd>
+	</dl>
+</a>
+	{{/each}}	
+</script>
