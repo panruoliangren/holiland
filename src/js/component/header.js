@@ -12,6 +12,7 @@ define(["jquery","cookie"], () => {
 			}).then(() => {
 				this.login();
 				this.exit();
+				this.check();
 			})
 		}	
 		login(){
@@ -29,6 +30,11 @@ define(["jquery","cookie"], () => {
 				location.reload();
 				console.log($.cookie)
 			})
+		}
+		check(){
+			if($.cookie("cart")) 
+				var n=JSON.parse($.cookie("cart")).length;
+				$("#h-num").html(n);
 		}
 	}
 	return new Header();

@@ -25,18 +25,23 @@ require(["./requirejs.config"], () => {
 							etitle:detail.etitle,
 							price:detail.price,
 							simg:detail.simg,
-							img:detail.img
+							img1:detail.img1,
+							img2:detail.img2,
+							img3:detail.img3
 						};							
 					}
 					Insert(objIns);
-					doBox(objIns);						
+					doBox(objIns);	
+					doBanner();
 				}				
 			});	
 			
 			//插入数据
 			function Insert(obj){
-				$("#detail-img").attr("src",obj.img);
-				$("#big-img").attr("src", obj.img);
+				$("#detail-img1").attr("src",obj.img1);
+				$("#detail-img2").attr("src",obj.img2);
+				$("#detail-img3").attr("src",obj.img3);
+//				$("#big-img").attr("src", obj.img);
 				$(".detail-banner dt").append("<img src="+obj.simg+">");				
 				$("#detail-title").html(obj.etitle);
 				$(".detail-banner dd span").html(obj.title);
@@ -53,7 +58,7 @@ require(["./requirejs.config"], () => {
 				//显示
 				objOut={
 					id:arrSearch[1],
-					img:obj.img,
+					img:obj.img1,
 					title:obj.title,						
 					price:price,
 					num:$("#num").html()*1,
@@ -109,11 +114,60 @@ require(["./requirejs.config"], () => {
 				//加入购物车
 				$("#cartBtn").on("click",function(){												
 					setCooki(obj);
+					alert("加入成功");
+					location.reload();
 				})
 				
 				$("#buynowBtn").on("click",function(){
 					setCooki(obj);
 				})
+			}
+			function doBanner(){
+				console.log(1)
+				let $imgs=$(".banner ul li"),
+					$btns=$(".banner ol li"),
+					len=$imgs.length,
+					index=0,
+					timer=null;
+				
+				//点击按钮
+				$btns.on("mouseover",function(){		
+					$(this).addClass("bc");
+					$(this).siblings().removeClass("bc");		
+					$imgs.eq(index).removeClass("bc").animate({opacity:0},1000);				
+					index=$(this).index();				
+					$imgs.eq(index).addClass("bc").animate({opacity:1},1000);
+				})	
+				
+				$("#goPrev").on("click",function(){
+					$btns.eq(index).removeClass("bc");						
+					$imgs.eq(index).removeClass("bc").animate({opacity:0},1000);
+					
+					index = --index<0 ?index=len-1:index;
+	
+					$btns.eq(index).addClass("bc");
+					$imgs.eq(index).addClass("bc").animate({opacity:1},1000);
+				})
+				
+				//下一张
+				$("#goNext").on("click",function(){
+					$btns.eq(index).removeClass("bc");						
+					$imgs.eq(index).removeClass("bc").animate({opacity:0},1000);
+					
+					index = ++index>=len ?index=0:index;
+	
+					$btns.eq(index).addClass("bc");
+					$imgs.eq(index).addClass("bc").animate({opacity:1},1000);
+				})
+				
+				$(".banner").hover(function(){
+					clearInterval(timer);
+				}, (function autoPlay(){
+					timer = setInterval(() => {
+						$("#goNext").trigger("click");
+					},3000);
+					return autoPlay;
+				})())
 			}
 		
 		})

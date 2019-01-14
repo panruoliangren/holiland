@@ -15,11 +15,7 @@ require(["./requirejs.config"], () => {
 					success:function(res){
 						if(res.res_code===1){	
 							$.cookie("tel",JSON.stringify({name:$("#tel").val()}),{path:"/"});
-							if(window.history.length>1){
-					            window.history.back();
-					        }else{
 					            window.location.href="/"
-					        }
 						}
 						alert(res.res_message);
 					},
